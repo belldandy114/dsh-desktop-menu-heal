@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Desktop application menu patch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f6feb"/>
+      <stop offset="1" stop-color="#1b3f8f"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="6" width="56" height="52" rx="10" fill="url(#bg)"/>
+  <rect x="10" y="16" width="44" height="36" rx="6" fill="#f6f9ff"/>
+  <rect x="10" y="16" width="44" height="9" rx="6" fill="#c8d8f8"/>
+  <circle cx="16.5" cy="20.5" r="2" fill="#e05c5c"/>
+  <circle cx="23.5" cy="20.5" r="2" fill="#e0b45c"/>
+  <circle cx="30.5" cy="20.5" r="2" fill="#5cbf7a"/>
+  <path d="M46 31a12 12 0 1 0 2.4 10.5" fill="none" stroke="#2f6feb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M49.5 27.5l1.2 8.2-8-1.4z" fill="#2f6feb" stroke="#2f6feb" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

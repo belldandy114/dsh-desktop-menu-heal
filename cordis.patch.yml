@@ -1,0 +1,7 @@
+# dsh-desktop-menu-heal bundle patch
+#
+# 以一条 host 行挂载自愈插件。包名由 profile 的 node_modules 解析，
+# 因此这个 bundle 必须通过 plugin_manager 安装（而不是手工拷进 node_modules）。
+- insert:
+    - id: desktop-menu-heal
+      name: 'dsh-desktop-menu-heal'

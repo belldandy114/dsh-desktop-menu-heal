@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Desktop application menu patch",
+    "description": "Restores the Reload Page and Restart App items in the desktop Application menu after an app update rewrites app.asar."
+  }
+}
