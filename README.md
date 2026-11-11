@@ -2,6 +2,22 @@
 
 DeepSeek Harness 桌面版的「应用」菜单补丁自愈插件。
 
+## 安装
+
+把仓库克隆或下载到本地（路径别删，插件是 `link:` 安装的），然后让 DSH 装上这个 bundle：
+
+```powershell
+git clone https://github.com/belldandy114/dsh-desktop-menu-heal.git E:\Test\dsh-desktop-menu-heal
+```
+
+在 DSH 里用插件管理器安装（GUI 的「插件」页，或让 agent 调 `plugin_manager`）：
+
+```
+plugin_manager { action: "install_bundle", target: "E:\\Test\\dsh-desktop-menu-heal" }
+```
+
+装完即为启用状态，无需管理员权限、无需重启（下一次启动起每次都会自检）。
+
 ## 它解决什么问题
 
 桌面版标题栏的「应用」下拉菜单里本该有：
