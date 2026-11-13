@@ -4,19 +4,27 @@ DeepSeek Harness 桌面版的「应用」菜单补丁自愈插件。
 
 ## 安装
 
-把仓库克隆或下载到本地（路径别删，插件是 `link:` 安装的），然后让 DSH 装上这个 bundle：
-
-```powershell
-git clone https://github.com/belldandy114/dsh-desktop-menu-heal.git E:\Test\dsh-desktop-menu-heal
-```
-
-在 DSH 里用插件管理器安装（GUI 的「插件」页，或让 agent 调 `plugin_manager`）：
+不用克隆，直接把 git 地址交给 DSH 的插件管理器即可（GUI 的「插件」页填地址，
+或让 agent 调 `plugin_manager`）：
 
 ```
-plugin_manager { action: "install_bundle", target: "E:\\Test\\dsh-desktop-menu-heal" }
+plugin_manager { action: "install_bundle", target: "github:belldandy114/dsh-desktop-menu-heal" }
 ```
 
-装完即为启用状态，无需管理员权限、无需重启（下一次启动起每次都会自检）。
+等价的完整地址写法：
+
+```
+plugin_manager { action: "install_bundle", target: "https://github.com/belldandy114/dsh-desktop-menu-heal" }
+```
+
+DSH 会用 pnpm 把仓库拉进 profile 的 `node_modules` 并登记到
+`dsh.profile.bundles`，`cordis.patch.yml` 里的挂载行由本包自带的 patch 提供，
+不需要手工改 profile 配置。装完即为启用状态，无需管理员权限、无需重启
+（下一次启动起每次都会自检）。
+
+> 想锁定版本就把地址换成带 commit 的写法：
+> `github:belldandy114/dsh-desktop-menu-heal#<40 位 commit>`。
+> 只有这种 pin 到完整 commit 的形式，插件管理器才认得出「可更新」。
 
 ## 它解决什么问题
 
